@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Informes Siete y Medio</title>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+    rel="stylesheet">
+    <link href="style_v2.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Índice:</h1>
+
+      <nav>
+        <ul>
+            <li><a href="#Carta inicial">
+              Carta inicial más repetida por cada usuario</a></li>
+            <li><a href="#Apuesta alta">Jugador que realiza la apuesta más alta
+              por partida</a></li>
+            <li><a href="#Apuesta baja">Jugador que realiza apuesta más baja por
+              partida</a></li>
+            <li><a href="#Ratio">Ratio de turnos ganados por jugador en cada
+              partida</a></li>
+            <li><a href="#Ganadas bots">Porcentaje de partidas ganadas Bots en
+              general</a></li>
+            <li><a href="#Ganadas segun palo">Rondas ganadas en cada partida
+              según el palo</a></li>
+            <li><a href="#Ganadas banca">Rondas ganadas por la banca</a></li>
+            <li><a href="#Usuarios banca">Usuarios que han sido la banca en una
+              partida</a></li>
+            <li><a href="#Apuesta media partida">Apuesta media por partida.</a>
+            </li>
+            <li><a href="#Ultima apuesta usuarios">Última apuesta de los
+              jugadores que no son bot.</a></li>
+            <li><a href="#Numero y valor total cartas">Número y valor total de
+              las cartas iniciales en las manos de la partida.</a></li>
+            <li><a href="https://trello.com/b/fwNdIWjK/proyecto-1-siete-y-medio"
+               target="blank_">Trello</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main>
+
+      <h1>Informes:</h1>
+
+      <div class="flex-container">
+
+        <div id="Carta inicial" class="marcos">
+          <!-- Query 1 -->
+          <section>
+
+            <h2>CARTA INICIAL MÁS REPETIDA</h2>
+
+            <p>Se indica la carta inicial más repetida por cada jugador.</p>
+
+            <table>
+                <caption>Query 1</caption>
+                <thead>
+                  <tr>
+                    <th>Nombre Usuario</th>
+                    <th>Carta inicial más repetida</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rafa</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>Jenni</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Leandro</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Belen</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Xavi</td>
+                        <td>No ha jugado</td>
+                    </tr>
+                    <tr>
+                        <td>Jordi</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>Lluis</td>
+                        <td>No ha jugado</td>
+                    </tr>
+                   </tbody>
+                </table>
+          </section>
+        </div>
+
+        <div id="Apuesta alta" class="marcos">
+          <!-- Query 2 -->
+          <section>
+
+            <h2>APUESTA MÁS ALTA</h2>
+
+            <p>Se indica el jugador que realiza la apuesta más alta por
+              partida.</p>
+
+            <table >
+                <caption>Query 2</caption>
+                <thead>
+                  <tr>
+                    <th>Partida</th>
+                    <th>Apuesta más alta</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Belen</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jordi</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Jordi</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Rafa</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Rafa</td>
+                    </tr>
+                   </tbody>
+                </table>
+          </section>
+        </div>
+
+        <div id="Apuesta baja" class="marcos">
+          <!-- Query 3 -->
+            <section>
+              <h2>APUESTA MÁS BAJA</h2>
+
+              <p>Se indica el jugador que realiza la apuesta más baja por
+                partida.</p>
+
+              <table>
+                  <caption>Query 3</caption>
+                  <thead>
+                    <tr>
+                      <th>Partida</th>
+                      <th>Apuesta más baja</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>1</td>
+                          <td>Jordi</td>
+                      </tr>
+                      <tr>
+                          <td>2</td>
+                          <td>Jordi</td>
+                      </tr>
+                      <tr>
+                          <td>3</td>
+                          <td>Jordi</td>
+                      </tr>
+                      <tr>
+                          <td>4</td>
+                          <td>Leandro</td>
+                      </tr>
+                      <tr>
+                          <td>5</td>
+                          <td>Leandro</td>
+                      </tr>
+                     </tbody>
+                  </table>
+            </section>
+        </div>
+
+        <div id="Ratio" class="marcos">
+          <!-- Query 4 -->
+          <section>
+            <h2>RATIO POR JUGADOR</h2>
+
+            <p>Se indica el ratio de turnos ganados por jugador en cada
+              partida</p>
+
+            <table>
+                <caption>Query 4</caption>
+                <thead>
+                  <tr>
+                    <th>Nombre Usuario</th>
+                    <th>Nombre Sala</th>
+                    <th>Porcentaje</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rafa</td>
+                        <td>Sala AWS</td>
+                        <td>83.33%</td>
+                    </tr>
+                    <tr>
+                        <td>Jenni</td>
+                        <td>Sala AWS</td>
+                        <td>16.67%</td>
+                    </tr>
+                    <tr>
+                        <td>Leandro</td>
+                        <td>Sala AWS</td>
+                        <td>100.00%</td>
+                    </tr>
+                    <tr>
+                        <td>Belen</td>
+                        <td>Sala AWS</td>
+                        <td>60.00%</td>
+                    </tr>
+                    <tr>
+                        <td>Jordi</td>
+                        <td>Sala AMS</td>
+                        <td>66.67%</td>
+                    </tr>
+                    <tr>
+                        <td>Jordi</td>
+                        <td>Sala Xavi contra el Bot</td>
+                        <td>Incongruencia</td>
+                    </tr>
+                    <tr>
+                        <td>Rafa</td>
+                        <td>Sala Rafa contra Leandro</td>
+                        <td>Incongruencia</td>
+                    </tr>
+                    <tr>
+                        <td>Leandro</td>
+                        <td>Sala Rafa contra Leandro</td>
+                        <td>Incongruencia</td>
+                    </tr>
+                    <tr>
+                        <td>Rafa</td>
+                        <td>Sala Rafa contra Leandro 2</td>
+                        <td>Incongruencia</td>
+                    </tr>
+                    <tr>
+                        <td>Leandro</td>
+                        <td>Sala Rafa contra Leandro 2</td>
+                        <td>Incongruencia</td>
+                    </tr>
+                   </tbody>
+                </table>
+          </section>
+        </div>
+
+        <div id="Ganadas bots" class="marcos">
+          <!-- Query 5 -->
+          <section>
+            <h2>PARTIDAS GANADAS BOTS</h2>
+
+            <p>Se indica el porcentaje de las partidas que han sido ganadas por
+              Bots.</p>
+            <table>
+                <caption>Query 5</caption>
+                <thead>
+                  <tr>
+                    <th>Porcentaje</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>40.00%</td>
+                    </tr>
+                   </tbody>
+                </table>
+          </section>
+        </div>
+
+        <div id="Ganadas segun palo" class="marcos">
+          <!-- Query 7 -->
+          <section>
+               <h2>PARTIDAS GANADAS SEGÚN PALO</h2>
+
+               <p>Se indican las rondas ganadas en cada partida según el
+                 palo.</p>
+
+               <table>
+                   <caption>Query 7</caption>
+                   <thead>
+                     <tr>
+                       <th>Partida</th>
+                       <th>Palo</th>
+                       <th>Rondas</th>
+                     </tr>
+                   </thead>
+                   <tbody>
+                       <tr>
+                           <td>1</td>
+                           <td>Oros</td>
+                           <td>5</td>
+                       </tr>
+                       <tr>
+                           <td>1</td>
+                           <td>Espadas</td>
+                           <td>1</td>
+                       </tr>
+                       <tr>
+                           <td>1</td>
+                           <td>Copas</td>
+                           <td>2</td>
+                       </tr>
+                       <tr>
+                           <td>2</td>
+                           <td>Oros</td>
+                           <td>5</td>
+                       </tr>
+                       <tr>
+                           <td>2</td>
+                           <td>Copas</td>
+                           <td>9</td>
+                       </tr>
+                       <tr>
+                           <td>2</td>
+                           <td>Espadas</td>
+                           <td>4</td>
+                       </tr>
+                       <tr>
+                           <td>2</td>
+                           <td>Bastos</td>
+                           <td>6</td>
+                       </tr>
+                       <tr>
+                           <td>3</td>
+                           <td>Oros</td>
+                           <td>2</td>
+                       </tr>
+                       <tr>
+                           <td>3</td>
+                           <td>Copas</td>
+                           <td>4</td>
+                       </tr>
+                       <tr>
+                           <td>3</td>
+                           <td>Espadas</td>
+                           <td>5</td>
+                       </tr>
+                       <tr>
+                           <td>3</td>
+                           <td>Bastos</td>
+                           <td>5</td>
+                       </tr>
+                       <tr>
+                           <td>4</td>
+                           <td>Espadas</td>
+                           <td>2</td>
+                       </tr>
+                       <tr>
+                           <td>4</td>
+                           <td>Oros</td>
+                           <td>5</td>
+                       </tr>
+                       <tr>
+                           <td>4</td>
+                           <td>Copas</td>
+                           <td>6</td>
+                       </tr>
+                       <tr>
+                           <td>4</td>
+                           <td>Bastos</td>
+                           <td>3</td>
+                       </tr>
+                       <tr>
+                           <td>5</td>
+                           <td>Copas</td>
+                           <td>4</td>
+                       </tr>
+                       <tr>
+                           <td>5</td>
+                           <td>Bastos</td>
+                           <td>4</td>
+                       </tr>
+                       <tr>
+                           <td>5</td>
+                           <td>Espadas</td>
+                           <td>5</td>
+                       </tr>
+                       <tr>
+                           <td>5</td>
+                           <td>Oros</td>
+                           <td>3</td>
+                       </tr>
+                      </tbody>
+                   </table>
+             </section>
+        </div>
+
+        <div id="Ganadas banca" class="marcos">
+          <!-- Query 8 -->
+          <section>
+            <h2>RONDAS GANADAS BANCA</h2>
+
+            <p>Se indica cuantas rondas gana la banca en cada partida.</p>
+
+            <table>
+                <caption>Query 8</caption>
+                <thead>
+                  <tr>
+                    <th>Partida</th>
+                    <th>Rondas Ganadas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>16</td>
+                    </tr>
+                   </tbody>
+                </table>
+          </section>
+        </div>
+
+        <div id="Usuarios banca" class="marcos">
+          <!-- Query 9 -->
+          <section>
+            <h2>USUARIOS SON BANCA</h2>
+            <p>Se indica cuántos usuarios han sido la banca en una partida</p>
+            <table>
+                <caption>Query 9</caption>
+                <thead>
+                  <tr>
+                    <th>Partida</th>
+                    <th>Usuarios</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>1</td>
+                    </tr>
+                   </tbody>
+                </table>
+          </section>
+        </div>
+
+        <div id="Apuesta media partida" class="marcos">
+          <!-- Query 11 -->
+          <section>
+            <h2>APUESTA MEDIA PARTIDA</h2>
+
+            <p>Calcula la apuesta media por partida.</p>
+
+            <table>
+                <caption>Query 11</caption>
+                <thead>
+                  <tr>
+                    <th>Partida</th>
+                    <th>Apuesta Media</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>1</td>
+                    </tr>
+                   </tbody>
+                </table>
+          </section>
+        </div>
+
+        <div id="Ultima apuesta usuarios" class="marcos">
+          <!-- Query 12 -->
+          <section>
+            <h2>ULTIMA APUESTA USUARIOS</h2>
+
+            <p>Se muestran los datos de los jugadoress que no son bot, así como
+              cual ha sido su última apuesta en cada partida que ha jugado.</p>
+
+            <table>
+                <caption>Query 12</caption>
+                <thead>
+                  <tr>
+                    <th>ID Usuario</th>
+                    <th>Nombre Usuario</th>
+                    <th>Partida</th>
+                    <th>Última Apuesta</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>6</td>
+                        <td>Jordi</td>
+                        <td>1</td>
+                        <td>5.00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rafa</td>
+                        <td>1</td>
+                        <td>2.00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jenni</td>
+                        <td>1</td>
+                        <td>2.00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Leandro</td>
+                        <td>1</td>
+                        <td>2.00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Belen</td>
+                        <td>1</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Jordi</td>
+                        <td>2</td>
+                        <td>3.00</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Jordi</td>
+                        <td>3</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rafa</td>
+                        <td>4</td>
+                        <td>1.00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Leandro</td>
+                        <td>4</td>
+                        <td>0.00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rafa</td>
+                        <td>5</td>
+                        <td>1.00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Leandro</td>
+                        <td>5</td>
+                        <td>0.00</td>
+                    </tr>
+                   </tbody>
+                </table>
+          </section>
+        </div>
+
+        <div id="Numero y valor total cartas" class="marcos">
+          <!-- Query 13 -->
+          <section>
+            <h2>NUMERO TOTAL Y VALOR CARTAS</h2>
+
+            <p>Se calcula el valor total de las cartas y el número total de
+              cartas dadas inicialmente en las manos de la partida.</p>
+            <table >
+                <caption>Query 13</caption>
+                <thead>
+                  <tr>
+                    <th>Partida</th>
+                    <th>Cartas</th>
+                    <th>Valor Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>22</td>
+                        <td>61.50</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>56</td>
+                        <td>161.50</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>32</td>
+                        <td>82.00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>32</td>
+                        <td>99.50</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>32</td>
+                        <td>107.00</td>
+                    </tr>
+                   </tbody>
+                </table>
+          </section>
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer>Powered by AMS1TEAM01</footer>
+
+  </body>
+
+</html>
