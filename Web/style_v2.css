@@ -1,0 +1,44 @@
+.marcos {
+  text-align: center;
+  width:500px;
+  border:3px solid black;
+  border-radius:22px;
+  background-color:#FFBF00;
+  margin: 0 auto;
+  margin-bottom: 40px
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px ;
+
+}
+
+table, th, td {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid black;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+table {
+  width: 350px;
+  border-color: white
+}
+
+html {
+  font-family: 'Oswald', sans-serif;
+}
+
+caption {
+  text-align: left;
+  font-weight: bolder;
+
+}
+
+footer {
+  text-align: right;
+}
